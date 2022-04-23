@@ -42,8 +42,8 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('🤖My Updates Channel', url='https://t.me/Prosearchx')],[
-            InlineKeyboardButton('🤖 Movie Search Bot', url='https://t.me/Prosearchbot')
+            InlineKeyboardButton('🤖Series Updates Channel', url='https://t.me/+6pH2TRsxw7o0NDE1')],[
+            InlineKeyboardButton('🤖 Movie Search Bots', url='https://t.me/Prosearchbot')
            
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -63,7 +63,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 Joinmy BOT Updates Channel", url=invite_link.invite_link
+                    "📌First Join my BOT Channel", url='https://t.me/+6pH2TRsxw7o0NDE1'
                 )
             ]
         ]
@@ -74,15 +74,15 @@ async def start(client, message):
             btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"{pre}#{file_id}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**First Join My Updates Channel to use this Bot!**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('🤖BOT Updates Channel', url='https://t.me/Prosearchx')],[
-            InlineKeyboardButton('🤖Movie Search Bot', url='https://t.me/Prosearchbot')
+            InlineKeyboardButton('🤖Series Updates Channel', url='https://t.me/+6pH2TRsxw7o0NDE1')],[
+            InlineKeyboardButton('🤖Movie Search Bots', url='https://t.me/Prosearchbot')
            
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
