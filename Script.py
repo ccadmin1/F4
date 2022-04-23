@@ -1,7 +1,9 @@
 class script(object):
-    START_TXT = """𝙷𝙴𝙻𝙾 {},
-Iam a TV/WEB Series Search BOT.  Just Send Series name and Season - 
-✯HELP - https://t.me/ProSearchX/7 😍"""
+    START_TXT = """<b>𝙷𝙴𝙻𝙻𝙾 {},
+    
+Iam the telegram Complete TV/WEB Series Search BOT.  Just Send Series Name and Season No.</b>
+
+Example - Breaking Bad S01"""
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
