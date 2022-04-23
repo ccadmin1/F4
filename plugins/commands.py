@@ -63,7 +63,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "📌First Join my BOT Channel", url=invite_link.invite_link
+                    "📌First Join my BOT Channel", url='https://t.me/+6pH2TRsxw7o0NDE1'
                 )
             ]
         ]
