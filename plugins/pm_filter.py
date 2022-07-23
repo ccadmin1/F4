@@ -742,7 +742,7 @@ async def advantage_spell_chok(msg):
     SPELL_CHECK[msg.message_id] = movielist
    
           
-    await msg.reply_text("Sorry, No Result Found. Please use correct method to Search @ProsearchX", quote=True)
+    await msg.reply_text("**❗️No Result Found.** Check Spelling.", quote=True)
 
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
