@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
+                InlineKeyboardButton('🤖 Updates', url='https://t.me/+vNp8jUAFe79iZDFl')
             ],
             [
                 InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -42,8 +42,8 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('🤖Series Updates Channel', url='https://t.me/+6pH2TRsxw7o0NDE1')],[
-            InlineKeyboardButton('🤖 Movie Search Bots', url='https://t.me/Prosearchbot')
+            InlineKeyboardButton('Updates Channel', url='https://t.me/+vNp8jUAFe79iZDFl')],[
+            InlineKeyboardButton('Series Channel', url='https://t.me/+sBkYq984blhkY2E9')
            
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -81,8 +81,8 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('🤖Series Updates Channel', url='https://t.me/+6pH2TRsxw7o0NDE1')],[
-            InlineKeyboardButton('🤖Movie Search Bots', url='https://t.me/Prosearchbot')
+            InlineKeyboardButton('Updates Channel', url='https://t.me/+vNp8jUAFe79iZDFl')],[
+            InlineKeyboardButton('Series Bots', url='https://t.me/+sBkYq984blhkY2E9')
            
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
