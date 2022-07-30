@@ -1,4 +1,4 @@
-# Kanged From @TroJanZheX
+
 import asyncio
 import re
 import ast
@@ -382,8 +382,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('🤖Updates Channel', url='https://t.me/Prosearchx')],[
-            InlineKeyboardButton('🤖 Movie Search Bots', url='https://t.me/Prosearchbots')
+            InlineKeyboardButton('Updates Channel', url='https://t.me/+vNp8jUAFe79iZDFl')],[
+            InlineKeyboardButton('Series Group', url='https://t.me/+sBkYq984blhkY2E9')
            
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -411,7 +411,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria'),
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/+vNp8jUAFe79iZDFl'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
@@ -612,7 +612,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"📂{get_size(file.file_size)} {file.file_name}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
